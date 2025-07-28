@@ -25,7 +25,7 @@ PyFirewall/
 └── PyFirewall_Setup.txt      # Environment setup and preparation guide
 ```
 
-📁 **Note:** After setting up the environment, a `venv/` folder will appear automatically. This folder should **not** be uploaded to GitHub (add to `.gitignore`).
+📁 **Note:** After setting up the environment, a `venv/` folder will appear automatically.
 
 ---
 
