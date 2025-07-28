@@ -110,4 +110,4 @@ This is an **educational tool**. It is not intended for production use. Always u
 
 ## 👩‍💻 Developed By
 
-**Bahtınur Ünal** — [GitHub: 0xnuorr](https://github.com/0xnuorr)
+**Bahtınur Ünal** — [GitHub: 0xnouur](https://github.com/0xnuorr)
