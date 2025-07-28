@@ -1,0 +1,38 @@
+# 🔧 PyFirewall - Pre-Setup Instructions (macOS/Linux)
+
+## 📁 Create Folder and Initial Files
+
+1. Create a new folder on your Desktop and navigate into it:
+   mkdir PyFirewall && cd PyFirewall
+
+2. Create the `firewall_server.py` file:
+   nano firewall_server.py
+   > Paste your code and save the file.
+
+3. Create the `rules.json` file:
+   nano rules.json
+   > Initial content: []
+
+## 🐍 Set Up Virtual Environment and Install Flask
+
+4. Create and activate a virtual environment:
+   python3 -m venv venv
+   source venv/bin/activate
+
+5. Install Flask:
+   pip install flask
+
+## 🚀 Run the Server
+
+6. Start the server:
+   python firewall_server.py
+
+   If successful, you’ll see:
+   Running on http://127.0.0.1:5055
+   or
+   Running on http://FIREWALL_HOST:5055
+
+## 🧪 Testing
+
+* You can now test the API from other machines (Kali VM / Windows) using `curl` commands.
+* See `commands_kali.txt` and `commands_windows.txt` for detailed examples.

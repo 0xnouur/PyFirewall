@@ -1,0 +1,12 @@
+[
+  {
+    "ip": "192.168.XX.*",  // Example: Masked local network IP for HTTP traffic
+    "port": 80,
+    "action": "block"
+  },
+  {
+    "ip": "10.XXX.XX.XX",  // Example: Masked internal VM IP for HTTPS traffic
+    "port": 443,
+    "action": "block"
+  }
+]

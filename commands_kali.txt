@@ -1,0 +1,27 @@
+# ✅ 1. Check rule — this one is expected to be blocked (example)
+curl -X POST http://FIREWALL_HOST:5055/check ^
+ -H "Authorization: Bearer mysecuretoken123" ^
+ -H "Content-Type: application/json" ^
+ -d "{\"ip\": \"BLOCKED_IP\", \"port\": 443}"
+
+# ✅ 2. Get current rule list
+curl http://FIREWALL_HOST:5055/rules ^
+ -H "Authorization: Bearer mysecuretoken123"
+
+# ✅ 3. Add new rule (e.g. IP: 8.8.8.8, port: 443)
+curl -X POST http://FIREWALL_HOST:5055/rules/update ^
+ -H "Authorization: Bearer mysecuretoken123" ^
+ -H "Content-Type: application/json" ^
+ -d "{\"ip\": \"8.8.8.8\", \"port\": 443, \"action\": \"block\"}"
+
+# ✅ 4. Delete existing rule
+curl -X POST http://FIREWALL_HOST:5055/rules/delete ^
+ -H "Authorization: Bearer mysecuretoken123" ^
+ -H "Content-Type: application/json" ^
+ -d "{\"ip\": \"8.8.8.8\", \"port\": 443}"
+
+# ✅ 5. Check rule — expected to be allowed (example)
+curl -X POST http://FIREWALL_HOST:5055/check ^
+ -H "Authorization: Bearer mysecuretoken123" ^
+ -H "Content-Type: application/json" ^
+ -d "{\"ip\": \"BLOCKED_IP\", \"port\": 80}"
