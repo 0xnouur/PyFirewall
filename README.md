@@ -107,6 +107,25 @@ All terminal steps to set up the project are listed in **PyFirewall_Setup.txt**.
 This is an **educational tool**. It is not intended for production use. Always use proper, audited firewalls in real environments.
 
 ---
+## 📸 Project Visuals
+
+This section demonstrates how the PyFirewall behaves during traffic inspection and rule evaluation, using screenshots taken during testing.
+
+- **Log File Output**
+  
+  ![Log File View](images/log_view.png)
+
+- **Browser Request Example**
+  
+  ![Browser Logs](images/browser_logs.png)
+
+- **Wireshark: Allowed Packet Capture**
+  
+  ![Wireshark Allow](images/wireshark_allow_response.png)
+
+- **Wireshark: Blocked Packet Capture**
+  
+  ![Wireshark Block](images/wireshark_rule_delete.png)
 
 ## 👩‍💻 Developed By
 
